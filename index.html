@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chalo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header"> 
+        <div class="header_img">
+      <img src="data:image/png;base64,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" alt="" 
+      style="width:60px; height:60px;">
+      <img
+        src="https://images.yourstory.com/cs/images/companies/chalologo1-1593062622490.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff"
+        alt="error"
+        style="width: 70px; height: 60px"/>
+    </div>
+        <p>Chalo App</p>
+      <p>Chalo Card</p>
+      <p>Mobile bus</p>
+      <p>Mobile ticket</p>
+      <u style="padding-top:20px;">Try chalo</u>
+      <p style="padding-right: 20px;">Download app</p>
+    </div>
+    <div class="body1">
+      <div class="body1_sub1">
+        <img src="https://chalo.com/assets/images/mock.png" alt="error" style="width:400px; height:400px"/>
+      </div>
+      <div class="body1_sub2">
+        <h2>The New Way Of Bus Travel</h2>
+        <h1 style="color:orange; ">In your city</h1>
+        <p style="color:grey; font-size: 15px;">
+          Chalo is India’s #1 bus transport technology company.
+          Live <br> <br> track your
+          bus on the Chalo App and get digital bus tickets <br> <br> on the Chalo Card.
+          Your one stop solution for a convenient <br><br> and hassle-free travel
+          experience. 
+        </p> 
+      <div class="download">
+        <p style="background-color: orange; border-radius: 30px; height:20px; width:120px; padding:20px; font-size:20px; color:white">Download app</p>
+        <u style="color:orange; padding:30px; font-size: 20px; padding-top:40px;"> Try chalo</u>
+    </div>  
+    </div> 
+      </div>
+      <div class="body2">
+        <div class="body2_sub1">
+          <h2>Making bus travel better</h2>
+          <h1 style="color:orange">Chalo products</h1>
+        </div>
+        <div class="body2_sub2">
+          <img
+            src="https://chalo.com/assets/images/page-card.png" style="width: 500px; height:500px"
+            alt="error"
+          />
+        </div>
+        <div class="body2_sub3">
+          <h1>Chalo cards</h1>
+          <p style="color:grey">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Repellendus
+            amet culpa temporibus eveniet veniam non impedit, <br> laudantium atque
+            inventore! Deserunt.
+          </p>
+          <a href="#" style="color:orange">Read more</a>
+        </div>  
+        <div class="Line">
+        </div>
+        </div>
+        <div class="body3">
+          <div class="body3_sub1">
+            <p style="font-size: 30px;">22 cities And Counting</p>
+            <h1  style="color:orange; padding-left: 50px;;">Chalo cities</h1>
+            <h4 style="color:grey">Redefining the bus travel experience through technology</h4>
+          </div>
+          <div class="body3_sub2">
+            <div class="body3_sub3_img1">
+              <img src="https://chalo.com/assets/images/agra.png" alt="error" />
+              <p style="padding-left: 70px;">Agra</p>
+            </div>
+            <div class="body3_sub3_img2">
+              <img
+                src="https://chalo.com/assets/images/bangkok.png" style="width:180px; height:180px"
+                alt="error"
+              />
+              <p style="padding-left: 70px;">bangkok</p>
+            </div>
+            <div class="body3_sub3_img3">
+              <img
+                src="https://chalo.com/assets/images/belgaum.png"
+                alt="error"
+              />
+              <p style="padding-left: 60px;">belgium</p>
+            </div>
+            <div class="body3_sub3_img4">
+              <img
+                src="https://chalo.com/assets/images/bhopal.png"
+                alt="error"
+              />
+              <p style="padding-left: 70px;">Bhopal</p>
+            </div>
+            <div class="body3_sub3_img5">
+              <img
+                src="https://chalo.com/assets/images/bhubaneswar.png"
+                alt="error"
+              />
+              <p style="padding-left: 70px;">bhubaneswar</p>
+            </div>
+          </div>
+          <div class="body3_sub4">
+            <p >View all cities</p>
+          </div>
+        </div>
+        <div class="body4">
+          <div class="body4_sub1">
+            <img src="https://chalo.com/assets/images/join-team.png" style="width: 700px; height:400px" alt="" />
+          </div>
+          <div class="body4_sub2">
+            <h2>Join India's #1 Mobility Company</h2>
+            <h1 style="color:orange">Chalo Jobs</h1> 
+            <br>
+            <h4 style="color:grey">
+              We are solving a real world problem that affects 200 million
+              Indians everyday. <br> If you are ready to take up the challenge of
+              solving complex problems at a massive scale, <br> welcome aboard!
+            </h4> <br> 
+            <div class="Job">
+            <p>View Job Openings</p>
+        </div>
+          </div>
+        </div>
+        <div class="body5">
+          <div class="body5_headline">
+            <h2 style="padding-left:600px;">Making Headlines For Better Travel</h2>
+            <h1 style="color:orange; padding-left:650px">Chalo In The News</h1>
+          </div>
+          <div class="body5_sub">
+            <div class="body5_sub_img1">
+              <div class="body5_sub_img1_div1">
+                <img
+                  src="https://chalo.com/assets/images/fundraise.png"
+                  alt="error"  style="width:300px; height:200px;"
+                />
+              </div>
+              <div class="body5_sub_img1_div2">
+                <p>
+                  Chalo Raises $45 Mn In Series D, Taking <br>  The Total Funds Raised
+                  To $119 Mn
+                </p>
+                <u style="color:orange;">Read more</u>
+              </div>
+            </div>
+            <div class="body5_sub_img2">
+              <div class="body5_sub_img2_div1">
+                <img
+                  src="https://chalo.com/assets/images/10-sep.jpg"
+                  alt="error" style="width:300px; height:200px;"
+                />
+              </div>
+              <div class="body5_sub_img2_div2">
+                <p>Reserve airport bus seats in Mumbai on <br> the Chalo app</p>
+                <u style="color:orange;">Read more at Timesnownews.com</u>
+              </div> 
+            </div>
+          <div class="body5_sub_img3">
+              <div class="body5_sub_img3_div1">
+                <img
+                  src="https://chalo.com/assets/images/12-aug.jpg"
+                  alt="error" style="width:300px; height:200px;"
+                />
+              </div>
+              <div class="body5_sub_img3_div2">
+                <p>
+                  5,000 electric buses to be deployed in <br> India by Switch
+                  Mobility and Chalo
+                </p>
+                <u style="color:orange;">Read more at Timesnownews.com</u>
+              </div>
+            </div>
+          </div>
+          <div class="body5_footer">
+            <p>See more news</p>
+          </div>
+        </div>
+        
+    <div class="Footer">
+        <div class="Footer_part1">
+            <h2>Contact Us</h2>
+            <p>Our offices</p>
+            <p>F-611 Tower 2, Seawoods Grand Central, <br>
+                Navi Mumbai 400706 India <br>
+                Corporate Identification Number (CIN): <br> U72900MH2014PTC254181</p>
+            <p>100 Peck Seah street, #08-14 PS100, <br>
+                Singapore 079333 <br>
+                Unique Entity Number (UEN): 201438158H</p>  <br>
+            <p>Email:contact@chalo.com</p>
+        </div>
+        <div class="Footer_part2">
+            <h2 style="padding-left: 40px;;">Social connect</h2>
+            <div class="Footer_part2_logo">
+                <div class="Footer_logo1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" 
+                    style="width: 50px; height:60px;" alt="error">
+                </div>
+                <div class="Footer_logo2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png"
+                    style="width: 50px; height:60px;" alt="error">
+                </div>
+                <div class="Footer_logo3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" 
+                    style="width: 50px; height:60px;" alt="error">
+                </div>
+                <div class="Footer_logo4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" 
+                    style="width: 50px; height:60px;" alt="error">
+                </div>
+            </div>
+
+        </div>
+        <div class="Footer_part3">
+           <h2> <b> <u >Terms and Conditions</u> </h2>
+            <h4>Copyright © Chalo Mobility Private Limited. All <br> Rights Reserved.</h4>
+        </div>
+
+
+    </div>
+  </body>
+</html>
